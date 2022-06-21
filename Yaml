@@ -1,0 +1,22 @@
+# top level keys are the environment
+some_environment:
+  enable:
+    - someplugin/someplugin.php
+  disable:
+    - someotherplugin/someotherplugin.php
+  # supports multisite
+  network-enable:
+    - someplugin/someplugin.php
+  network-disable:
+    - someplugin/someplugin.php
+
+# 'global' is a special key that you can use to apply to all environments
+global:
+  enable:
+    - woocommerce/woocommerce.php
+    - wpmandrill/wpmandrill.php
+    
+development:
+  disable:
+    - wpmandrill/wpmandrill.php
+    
