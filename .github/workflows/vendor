@@ -1,0 +1,5 @@
+require('vendor/autoload.php');
+// ...
+// after WordPress is loaded - eg: within an mu-plugin
+// ..
+\PrimeTime\WordPress\PluginManifest\Activation::set('path/to/plugin-manifest.yml', getenv('WP_ENV'));
